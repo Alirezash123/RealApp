@@ -3,7 +3,7 @@
         "tournament_icon": "https://raw.githubusercontent.com/Alirezash123/RealApp/462dda9bce4d2f3f942ffdd465967b24573a606d/5842fe0ea6515b1e0ad75b3c.png",
         "tournament_text": "ChampionsLeagu",
         "home_team_icon": "https://upload.wikimedia.org/wikipedia/fa/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/800px-Atletico_Madrid_Logo_2024.svg.png",
-        "away_team_icon": "https://upload.wikimedia.org/wikipedia/fa/thumb/5/56/Real_Madrid_CF.svg/300px-Real_Madrid_CF.svg.png",
+        "away_team_icon"",
         "home_team_name": "Atletico Madrid",
         "away_team_name": "Real Madrid",
         "date_match": "1403/12/22",
