@@ -4,7 +4,7 @@
         "tournament_text": "ChampionsLeagu",
         "home_team_icon": "https://upload.wikimedia.org/wikipedia/fa/thumb/f/f9/Atletico_Madrid_Logo_2024.svg/800px-Atletico_Madrid_Logo_2024.svg.png",
         "away_team_icon":"https://upload.wikimedia.org/wikipedia/mzn/b/b8/Logo_Real_Madrid.png",
-        "home_team_name": "Atletico Madrid",
+        "home_team_name": "Atletico",
         "away_team_name": "Real Madrid",
         "date_match": "1403/12/22",
         "time_match": "23:30",
