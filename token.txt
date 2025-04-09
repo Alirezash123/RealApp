@@ -1,1 +1,38 @@
-0UAaRT-r7gb
+tanzim name karbar....
+exite code:1
+
+khata dartanzim name karbar....:khata dar run dastor(1)
+tanzim email....
+exite code:1
+
+khata dartanzim email....:khata dar run dastor(1)
+meghdardehi git...
+Reinitialized existing Git repository in C:/Users/USER/Desktop/test-gitpush/.git/
+exite code:0
+
+add kardan file...
+exite code:0
+
+commit....
+On branch master
+Your branch is up to date with 'origin/master'.
+nothing to commit, working tree clean
+exite code:1
+
+khata darcommit....:khata dar run dastor(1)
+connect to gitlab
+Eror:usage: git remote add [<options>] <name> <url>
+Eror:    -f, --fetch           fetch the remote branches
+Eror:    --tags                import all tags and associated objects when fetching
+Eror:                          or do not fetch any tag at all (--no-tags)
+Eror:    -t, --track <branch>  branch(es) to track
+Eror:    -m, --master <branch> master branch
+Eror:    --mirror[=(push|fetch)]
+Eror:                          set up remote as a mirror to push to or fetch from
+exite code:129
+
+khata darconnect to gitlab:khata dar run dastor(129)
+push to git...
+Eror:Everything set up to track 'origin/master'.
+exite code:0
+
