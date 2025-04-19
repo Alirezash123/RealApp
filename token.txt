@@ -1,9 +1,9 @@
 \[
 f(x) = \left\{
 \begin{array}{ll}
-1 & \text{if } x = 0, \\
-x^2 & \text{if } x > 0, \\
--1 & \text{if } x < 0.
+\infty & \text{رشد } f \text{ بیشتر است} \\
+0 & \text{رشد } g \text{ بیشتر است} \\
+\text{عدد ثابت} & \text{رشد آن دو برابر است}
 \end{array}
 \right.
 \]
