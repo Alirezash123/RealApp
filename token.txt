@@ -1,2 +1,51 @@
-TAKE PROFITS
-@CryptoHeaven
+import cv2
+import os
+import numpy as np
+from pathlib import Path
+
+def calculate_histogram(image):
+    # محاسبه هیستوگرام رنگ برای تصویر
+    hist = cv2.calcHist([image], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
+    cv2.normalize(hist, hist)
+    return hist.flatten()
+
+def find_similar_images(input_image_path, folder_path, top_n=5):
+    # خواندن تصویر ورودی
+    input_image = cv2.imread(input_image_path)
+    if input_image is None:
+        print("تصویر ورودی پیدا نشد!")
+        return
+    
+    input_hist = calculate_histogram(input_image)
+    
+    # لیست برای ذخیره شباهت‌ها
+    similarities = []
+    
+    # خواندن تمام تصاویر از پوشه
+    folder = Path(folder_path)
+    for image_path in folder.glob("*.jpg"):  # فرض بر اینه که تصاویر jpg هستن
+        image = cv2.imread(str(image_path))
+        if image is None:
+            continue
+        
+        hist = calculate_histogram(image)
+        # محاسبه شباهت با استفاده از روش مقایسه هیستوگرام
+        similarity = cv2.compareHist(input_hist, hist, cv2.HISTCMP_CORREL)
+        similarities.append((similarity, image_path))
+    
+    # مرتب‌سازی بر اساس شباهت (نزولی)
+    similarities.sort(reverse=True)
+    
+    # نمایش top_n تصویر شبیه
+    for i, (sim, img_path) in enumerate(similarities[:top_n]):
+        print(f"تصویر {i+1}: {img_path} با شباهت {sim:.4f}")
+        img = cv2.imread(str(img_path))
+        cv2.imshow(f"مشابه {i+1}", img)
+    
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+# مثال استفاده
+input_image_path = "path/to/your/input_image.jpg"  # مسیر تصویر ورودی
+folder_path = "path/to/your/image_folder"         # مسیر پوشه حاوی تصاویر
+find_similar_images(input_image_path, folder_path, top_n=5)
