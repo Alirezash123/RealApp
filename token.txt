@@ -2,50 +2,114 @@ import cv2
 import os
 import numpy as np
 from pathlib import Path
+import tkinter as tk
+from tkinter import filedialog, messagebox
 
-def calculate_histogram(image):
-    # محاسبه هیستوگرام رنگ برای تصویر
-    hist = cv2.calcHist([image], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
-    cv2.normalize(hist, hist)
-    return hist.flatten()
+class ImageSimilarityApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("جستجوی تصاویر مشابه")
+        self.root.geometry("400x200")
 
-def find_similar_images(input_image_path, folder_path, top_n=5):
-    # خواندن تصویر ورودی
-    input_image = cv2.imread(input_image_path)
-    if input_image is None:
-        print("تصویر ورودی پیدا نشد!")
-        return
-    
-    input_hist = calculate_histogram(input_image)
-    
-    # لیست برای ذخیره شباهت‌ها
-    similarities = []
-    
-    # خواندن تمام تصاویر از پوشه
-    folder = Path(folder_path)
-    for image_path in folder.glob("*.jpg"):  # فرض بر اینه که تصاویر jpg هستن
-        image = cv2.imread(str(image_path))
-        if image is None:
-            continue
+        # متغیرها برای ذخیره مسیرها
+        self.input_image_path = None
+        self.folder_path = None
+
+        # ایجاد ویجت‌ها
+        self.label_input = tk.Label(root, text="تصویر ورودی: هنوز انتخاب نشده")
+        self.label_input.pack(pady=5)
+
+        self.btn_select_image = tk.Button(root, text="انتخاب تصویر ورودی", command=self.select_input_image)
+        self.btn_select_image.pack(pady=5)
+
+        self.label_folder = tk.Label(root, text="پوشه تصاویر: هنوز انتخاب نشده")
+        self.label_folder.pack(pady=5)
+
+        self.btn_select_folder = tk.Button(root, text="انتخاب پوشه تصاویر", command=self.select_folder)
+        self.btn_select_folder.pack(pady=5)
+
+        self.btn_run = tk.Button(root, text="اجرای جستجو", command=self.run_search)
+        self.btn_run.pack(pady=10)
+
+    def select_input_image(self):
+        # انتخاب فایل تصویر
+        file_path = filedialog.askopenfilename(
+            title="انتخاب تصویر ورودی",
+            filetypes=[("Image files", "*.jpg *.jpeg *.png *.bmp")]
+        )
+        if file_path:
+            self.input_image_path = file_path
+            self.label_input.config(text=f"تصویر ورودی: {os.path.basename(file_path)}")
+
+    def select_folder(self):
+        # انتخاب پوشه
+        folder_path = filedialog.askdirectory(title="انتخاب پوشه تصاویر")
+        if folder_path:
+            self.folder_path = folder_path
+            self.label_folder.config(text=f"پوشه تصاویر: {os.path.basename(folder_path)}")
+
+    def calculate_histogram(self, image):
+        hist = cv2.calcHist([image], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
+        cv2.normalize(hist, hist)
+        return hist.flatten()
+
+    def find_similar_images(self, input_image_path, folder_path, top_n=5):
+        # بررسی وجود تصویر ورودی
+        if not os.path.isfile(input_image_path):
+            messagebox.showerror("خطا", f"تصویر ورودی در مسیر {input_image_path} پیدا نشد!")
+            return
         
-        hist = calculate_histogram(image)
-        # محاسبه شباهت با استفاده از روش مقایسه هیستوگرام
-        similarity = cv2.compareHist(input_hist, hist, cv2.HISTCMP_CORREL)
-        similarities.append((similarity, image_path))
-    
-    # مرتب‌سازی بر اساس شباهت (نزولی)
-    similarities.sort(reverse=True)
-    
-    # نمایش top_n تصویر شبیه
-    for i, (sim, img_path) in enumerate(similarities[:top_n]):
-        print(f"تصویر {i+1}: {img_path} با شباهت {sim:.4f}")
-        img = cv2.imread(str(img_path))
-        cv2.imshow(f"مشابه {i+1}", img)
-    
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+        input_image = cv2.imread(input_image_path)
+        if input_image is None:
+            messagebox.showerror("خطا", f"نمی‌توان تصویر {input_image_path} را خواند!")
+            return
+        
+        input_hist = self.calculate_histogram(input_image)
+        
+        # بررسی وجود پوشه
+        if not os.path.isdir(folder_path):
+            messagebox.showerror("خطا", f"پوشه در مسیر {folder_path} پیدا نشد!")
+            return
+        
+        similarities = []
+        folder = Path(folder_path)
+        for image_path in folder.glob("*.*"):  # پشتیبانی از همه فرمت‌های تصویری
+            image = cv2.imread(str(image_path))
+            if image is None:
+                print(f"هشدار: نمی‌توان تصویر {image_path} را خواند!")
+                continue
+            
+            hist = self.calculate_histogram(image)
+            similarity = cv2.compareHist(input_hist, hist, cv2.HISTCMP_CORREL)
+            similarities.append((similarity, image_path))
+        
+        if not similarities:
+            messagebox.showerror("خطا", "هیچ تصویر معتبری در پوشه پیدا نشد!")
+            return
+        
+        similarities.sort(reverse=True)
+        
+        # نمایش تصاویر مشابه
+        for i, (sim, img_path) in enumerate(similarities[:top_n]):
+            print(f"تصویر {i+1}: {img_path} با شباهت {sim:.4f}")
+            img = cv2.imread(str(img_path))
+            cv2.imshow(f"مشابه {i+1} - شباهت: {sim:.4f}", img)
+        
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
-# مثال استفاده
-input_image_path = "path/to/your/input_image.jpg"  # مسیر تصویر ورودی
-folder_path = "path/to/your/image_folder"         # مسیر پوشه حاوی تصاویر
-find_similar_images(input_image_path, folder_path, top_n=5)
+    def run_search(self):
+        # بررسی اینکه هر دو مسیر انتخاب شده باشند
+        if not self.input_image_path or not self.folder_path:
+            messagebox.showwarning("هشدار", "لطفاً تصویر ورودی و پوشه تصاویر را انتخاب کنید!")
+            return
+        
+        self.find_similar_images(self.input_image_path, self.folder_path, top_n=5)
+
+def main():
+    root = tk.Tk()
+    app = ImageSimilarityApp(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
