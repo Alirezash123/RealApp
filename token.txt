@@ -48,10 +48,14 @@ class ImageSimilarityApp:
             self.folder_path = folder_path
             self.label_folder.config(text=f"پوشه تصاویر: {os.path.basename(folder_path)}")
 
-    def calculate_histogram(self, image):
-        hist = cv2.calcHist([image], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
-        cv2.normalize(hist, hist)
-        return hist.flatten()
+    def extract_orb_features(self, image):
+        # تبدیل تصویر به خاکستری
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        # ایجاد شیء ORB
+        orb = cv2.ORB_create()
+        # استخراج نقاط کلیدی و توصیف‌گرها
+        keypoints, descriptors = orb.detectAndCompute(gray, None)
+        return keypoints, descriptors
 
     def find_similar_images(self, input_image_path, folder_path, top_n=5):
         # بررسی وجود تصویر ورودی
@@ -64,7 +68,11 @@ class ImageSimilarityApp:
             messagebox.showerror("خطا", f"نمی‌توان تصویر {input_image_path} را خواند!")
             return
         
-        input_hist = self.calculate_histogram(input_image)
+        # استخراج ویژگی‌های ORB برای تصویر ورودی
+        _, input_descriptors = self.extract_orb_features(input_image)
+        if input_descriptors is None:
+            messagebox.showerror("خطا", "نقاط کلیدی در تصویر ورودی پیدا نشد!")
+            return
         
         # بررسی وجود پوشه
         if not os.path.isdir(folder_path):
@@ -79,21 +87,32 @@ class ImageSimilarityApp:
                 print(f"هشدار: نمی‌توان تصویر {image_path} را خواند!")
                 continue
             
-            hist = self.calculate_histogram(image)
-            similarity = cv2.compareHist(input_hist, hist, cv2.HISTCMP_CORREL)
+            # استخراج ویژگی‌های ORB برای تصویر فعلی
+            _, descriptors = self.extract_orb_features(image)
+            if descriptors is None:
+                print(f"هشدار: نقاط کلیدی در تصویر {image_path} پیدا نشد!")
+                continue
+            
+            # تطبیق ویژگی‌ها با استفاده از BFMatcher
+            bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+            matches = bf.match(input_descriptors, descriptors)
+            
+            # محاسبه امتیاز شباهت بر اساس تعداد تطبیق‌ها
+            similarity = len(matches)
             similarities.append((similarity, image_path))
         
         if not similarities:
             messagebox.showerror("خطا", "هیچ تصویر معتبری در پوشه پیدا نشد!")
             return
         
+        # مرتب‌سازی بر اساس شباهت (نزولی)
         similarities.sort(reverse=True)
         
         # نمایش تصاویر مشابه
         for i, (sim, img_path) in enumerate(similarities[:top_n]):
-            print(f"تصویر {i+1}: {img_path} با شباهت {sim:.4f}")
+            print(f"تصویر {i+1}: {img_path} با تعداد تطبیق‌ها: {sim}")
             img = cv2.imread(str(img_path))
-            cv2.imshow(f"مشابه {i+1} - شباهت: {sim:.4f}", img)
+            cv2.imshow(f"مشابه {i+1} - تطبیق‌ها: {sim}", img)
         
         cv2.waitKey(0)
         cv2.destroyAllWindows()
