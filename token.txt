@@ -1,9 +1,7 @@
-\[
-f(x) = \left\{
+lim_{n\to \infty}\frac{f(x)}{g(x)} = \left\{
 \begin{array}{ll}
 \infty & \text{رشد } f \text{ بیشتر است} \\
 0 & \text{رشد } g \text{ بیشتر است} \\
 \text{عدد ثابت} & \text{رشد آن دو برابر است}
 \end{array}
 \right.
-\]
