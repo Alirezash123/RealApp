@@ -1,9 +1,1 @@
-\[
-\lim_{n\to \infty}\frac{f(n)}{g(n)} = \left\{
-\begin{array}{ll}
-\infty & \hfill \text{رشد } f \text{ بیشتر است} \\
-0 & \hfill \text{رشد } g \text{ بیشتر است} \\
-c & \hfill \text{رشد آن دو برابر است}
-\end{array}
-\right.
-\]
+https://uploadkon.ir/uploads/f1b821_25classDiagram-1-.zip
