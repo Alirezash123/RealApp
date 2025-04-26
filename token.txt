@@ -56,3 +56,7 @@ if entry_zone:
         signal["entry_price"] = float(entry_zone.group(1))  # قیمت اول برای بقیه
 else:
     signal["entry_price"] = None
+
+
+
+entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*([\d.]+)\s*-\s*([\d.]+)", text, re.IGNORECASE)
