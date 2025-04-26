@@ -60,3 +60,6 @@ else:
 
 
 entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*([\d.]+)\s*-\s*([\d.]+)", text, re.IGNORECASE)
+
+
+entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*(\d+\.\d+)\s*-\s*(\d+\.\d+)", text, re.IGNORECASE)
