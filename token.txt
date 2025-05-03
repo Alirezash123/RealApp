@@ -6,7 +6,7 @@ def parse_signal(text):
     2. Free Signal (Futures)
     """
     # بررسی وجود یکی از دو ساختار سیگنال
-    if not ("Futures (Free Signal)" in text or "Free Signal (Futures)" in text):
+    if not ("Futures (Free Signal)" in text or "#Free_signal" in text or "Free Signal (Futures)" in text):
         return None
     
     signal = {}
@@ -19,12 +19,19 @@ def parse_signal(text):
         signal["type"] = type_match.group(1).upper() if type_match else None
         
         # استخراج نماد (مثل XRPUSDT یا PAXGUSDT)
-        symbol_match = re.search(r"#(\w+)", text)
+        symbol_match = re.search(r"#(\w+/)", text)
         signal["symbol"] = symbol_match.group(1).replace("/", "") if symbol_match else None
         
         # استخراج قیمت دوم Entry Zone
-        entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*[\d.]+\s*-\s*([\d.]+)", text, re.IGNORECASE)
-        signal["entry_price"] = float(entry_zone.group(1)) if entry_zone else None
+        
+        entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*(\d+\.\d+)\s*-\s*(\d+\.\d+)", text, re.IGNORECASE)
+        if entry_zone:
+           if "Futures (Free Signal)" in text or "Free Signal (Futures)" in text:
+              signal["entry_price"] = float(entry_zone.group(2))  # قیمت دوم برای Futures (Free Signal)
+           else:
+              signal["entry_price"] = float(entry_zone.group(1))  # قیمت اول برای بقیه
+        else:
+           signal["entry_price"] = None
         
         # استخراج تارگت‌ها (دومین تارگت)
         targets_section = re.search(r"Targets\s*:(.*?)(?:\nStop\s*(?:loss)?|\nLeverage|$)", text, re.DOTALL | re.IGNORECASE)
@@ -44,26 +51,3 @@ def parse_signal(text):
     except Exception as e:
         print(f"Error parsing signal: {e}")
         return None
-
-
-
-
-
-if entry_zone:
-    if "Futures (Free Signal)" in text:
-        signal["entry_price"] = float(entry_zone.group(2))  # قیمت دوم برای Futures (Free Signal)
-    else:
-        signal["entry_price"] = float(entry_zone.group(1))  # قیمت اول برای بقیه
-else:
-    signal["entry_price"] = None
-
-
-
-entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*([\d.]+)\s*-\s*([\d.]+)", text, re.IGNORECASE)
-
-
-entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*(\d+\.\d+)\s*-\s*(\d+\.\d+)", text, re.IGNORECASE)
-
-
-
-Free Signal (Futures)
