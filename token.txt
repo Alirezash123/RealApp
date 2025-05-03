@@ -1,52 +1,57 @@
 def parse_signal(text):
     """
-    استخراج مقادیر موردنیاز از سیگنال و ذخیره در یک دیکشنری
-    پشتیبانی از دو ساختار سیگنال:
-    1. Futures (Free Signal)
-    2. Free Signal (Futures)
+    استخراج مقادیر موردنیاز از سیگنال‌های با ساختار NFP/USDT و SUSHI/USDT.
     """
-    # بررسی وجود یکی از دو ساختار سیگنال
-    if not ("Futures (Free Signal)" in text or "#Free_signal" in text or "Free Signal (Futures)" in text):
-        return None
-    
     signal = {}
     try:
-        # چاپ متن خام سیگنال برای دیباگ
+        # پاک‌سازی متن: حذف کاراکترهای یونیکد، بولد (**)، و نرمال‌سازی فاصله‌ها
+        text = re.sub(r'[^\x00-\x7F]+', ' ', text)  # حذف ایموجی‌ها
+        text = re.sub(r'\*\*', '', text)  # حذف کاراکترهای بولد
+        text = re.sub(r'\s+', ' ', text)  # تبدیل فاصله‌های متعدد به یک فاصله
+        text = text.strip()
+
+        # چاپ متن خام و پاک‌شده برای دیباگ
         print(f"Raw signal text: {text}")
-        
+        print(f"Cleaned signal text: {text}")
+
         # استخراج نوع معامله (SHORT یا LONG)
-        type_match = re.search(r"(SHORT|LONG)", text, re.IGNORECASE)
+        type_match = re.search(r"#(SHORT|LONG)", text, re.IGNORECASE)
         signal["type"] = type_match.group(1).upper() if type_match else None
-        
-        # استخراج نماد (مثل XRPUSDT یا PAXGUSDT)
-        symbol_match = re.search(r"#(\w+/)", text)
-        signal["symbol"] = symbol_match.group(1).replace("/", "") if symbol_match else None
-        
-        # استخراج قیمت دوم Entry Zone
-        
-        entry_zone = re.search(r"Entry\s*(?:zone)?\s*:\s*(\d+\.\d+)\s*-\s*(\d+\.\d+)", text, re.IGNORECASE)
-        if entry_zone:
-           if "Futures (Free Signal)" in text or "Free Signal (Futures)" in text:
-              signal["entry_price"] = float(entry_zone.group(2))  # قیمت دوم برای Futures (Free Signal)
-           else:
-              signal["entry_price"] = float(entry_zone.group(1))  # قیمت اول برای بقیه
-        else:
-           signal["entry_price"] = None
-        
-        # استخراج تارگت‌ها (دومین تارگت)
-        targets_section = re.search(r"Targets\s*:(.*?)(?:\nStop\s*(?:loss)?|\nLeverage|$)", text, re.DOTALL | re.IGNORECASE)
+        print(f"Type: {signal['type']}")
+
+        # استخراج نماد (مثل NFP، SUSHI)
+        symbol_match = re.search(r"#(\w+)/USDT", text)
+        signal["symbol"] = symbol_match.group(1) if symbol_match else None
+        print(f"Symbol: {signal['symbol']}")
+
+        # استخراج اولین قیمت ورود
+        entry_match = re.search(r"BUY\s*:\s*1\)\s*(\d+\.\d{2,4})", text, re.IGNORECASE)
+        signal["entry_price"] = float(entry_match.group(1)) if entry_match else None
+        print(f"Entry price: {signal['entry_price']}")
+
+        # استخراج اولین تارگت
+        targets_section = re.search(r"Take Profit Targets\s*:\s*(.*?)(?:\s*SL|\s*LEV|$)", text, re.DOTALL | re.IGNORECASE)
         if targets_section:
             targets_text = targets_section.group(1)
-            # استخراج تمام اعداد اعشاری به عنوان تارگت‌ها
-            all_targets = re.findall(r"\d+\.\d+", targets_text)
-            signal["tp_price"] = float(all_targets[1]) if len(all_targets) >= 2 else None
+            print(f"Targets text: {targets_text}")  # دیباگ
+            target_match = re.search(r"\d+\.\d{2,4}", targets_text)
+            signal["tp_price"] = float(target_match.group(0)) if target_match else None
         else:
             signal["tp_price"] = None
-        
+        print(f"Take profit: {signal['tp_price']}")
+
         # استخراج Stop Loss
-        sl_match = re.search(r"Stop\s*(?:loss)?\s*:\s*([\d.]+)", text, re.IGNORECASE)
+        sl_match = re.search(r"SL\s*:\s*(\d+\.\d{2,4})", text, re.IGNORECASE)
         signal["sl_price"] = float(sl_match.group(1)) if sl_match else None
-        
+        print(f"Stop loss: {signal['sl_price']}")
+
+        # بررسی کامل بودن سیگنال
+        required_fields = ["type", "symbol", "entry_price", "tp_price", "sl_price"]
+        missing_fields = [field for field in required_fields if signal.get(field) is None]
+        if missing_fields:
+            print(f"Invalid or incomplete signal. Missing: {missing_fields}")
+            return None
+
         return signal
     except Exception as e:
         print(f"Error parsing signal: {e}")
