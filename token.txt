@@ -104,32 +104,57 @@ def parse_signal(text):
                 signal["sl_price"] = float(sl_match.group(1)) if sl_match else None
 
             else:
-                # پردازش ساختار قدیم
-                type_match = re.search(r"#(SHORT|LONG)", text, re.IGNORECASE)
-                signal["type"] = type_match.group(1).upper() if type_match else None
+                # تشخیص ساختار جدید (ساختار FARTCOIN/USDT)
+                is_fartcoin_format = "/USDT" in text and "Entry Price:" in text and "Take-Profit 1:" in text and "Stop-Loss:" in text
 
-                symbol_match = re.search(r"#(\w+)USDT", text, re.IGNORECASE)
-                if symbol_match:
-                    symbol = symbol_match.group(1).upper()
-                    if symbol.endswith("USDT"):
-                        symbol = symbol[:-4]
-                    signal["symbol"] = symbol
+                if is_fartcoin_format:
+                    # استخراج نوع معامله
+                    type_match = re.search(r"(Long|Short)\s*$", text.split("/USDT")[1].split()[0], re.IGNORECASE)
+                    signal["type"] = type_match.group(1).upper() if type_match else None
+
+                    # استخراج نماد
+                    symbol_match = re.search(r"(\w+)/USDT", text, re.IGNORECASE)
+                    signal["symbol"] = symbol_match.group(1).upper() if symbol_match else None
+
+                    # استخراج قیمت ورود
+                    entry_match = re.search(r"Entry Price:\s*(\d+\.\d+)", text, re.IGNORECASE)
+                    signal["entry_price"] = float(entry_match.group(1)) if entry_match else None
+
+                    # استخراج تارگت اول
+                    tp_match = re.search(r"Take-Profit 1:\s*(\d+\.\d+)", text, re.IGNORECASE)
+                    signal["tp_price"] = float(tp_match.group(1)) if tp_match else None
+
+                    # استخراج استاپ لاس
+                    sl_match = re.search(r"Stop-Loss:\s*(\d+\.\d+)", text, re.IGNORECASE)
+                    signal["sl_price"] = float(sl_match.group(1)) if sl_match else None
+
                 else:
-                    signal["symbol"] = None
+                    # پردازش ساختار قدیم
+                    type_match = re.search(r"#(SHORT|LONG)", text, re.IGNORECASE)
+                    signal["type"] = type_match.group(1).upper() if type_match else None
 
-                entry_match = re.search(r"BUY\s*:\s*1\)\s*(\d+\.\d+)", text, re.IGNORECASE)
-                signal["entry_price"] = float(entry_match.group(1)) if entry_match else None
+                    symbol_match = re.search(r"#(\w+)USDT", text, re.IGNORECASE)
+                    if symbol_match:
+                        symbol = symbol_match.group(1).upper()
+                        if symbol.endswith("USDT"):
+                            symbol = symbol[:-4]
+                        signal["symbol"] = symbol
+                    else:
+                        signal["symbol"] = None
 
-                targets_section = re.search(r"Take Profit Targets\s*:\s*(.*?)(?:\s*SL|\s*LEV|$)", text, re.DOTALL | re.IGNORECASE)
-                if targets_section:
-                    targets_text = targets_section.group(1)
-                    target_match = re.findall(r"\d+\.\d+", targets_text)
-                    signal["tp_price"] = float(target_match[0]) if target_match else None
-                else:
-                    signal["tp_price"] = None
+                    entry_match = re.search(r"BUY\s*:\s*1\)\s*(\d+\.\d+)", text, re.IGNORECASE)
+                    signal["entry_price"] = float(entry_match.group(1)) if entry_match else None
 
-                sl_match = re.search(r"SL\s*:\s*(\d+\.\d+)", text, re.IGNORECASE)
-                signal["sl_price"] = float(sl_match.group(1)) if sl_match else None
+                    targets_section = re.search(r"Take Profit Targets\s*:\s*(.*?)(?:\s*SL|\s*LEV|$)", text, re.DOTALL | re.IGNORECASE)
+                    if targets_section:
+                        targets_text = targets_section.group(1)
+                        target_match = re.findall(r"\d+\.\d+", targets_text)
+                        signal["tp_price"] = float(target_match[0]) if target_match else None
+                    else:
+                        signal["tp_price"] = None
+
+                    sl_match = re.search(r"SL\s*:\s*(\d+\.\d+)", text, re.IGNORECASE)
+                    signal["sl_price"] = float(sl_match.group(1)) if sl_match else None
 
         # بررسی کامل بودن سیگنال
         required_fields = ["type", "symbol", "entry_price", "tp_price", "sl_price"]
