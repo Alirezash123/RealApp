@@ -6,8 +6,8 @@
     "away_team_icon": "https://crests.football-data.org//745.png",
     "home_team_name": "رئال مادرید",
     "away_team_name": "لگانس",
-    "Hometeamegoale": "3",
-    "awayteamegoal": "1",
+    "homegoal": "3",
+    "awaygoal": "1",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   },
@@ -18,8 +18,8 @@
     "away_team_icon": "https://crests.football-data.org//745.png",
     "home_team_name": "رئال مادرید",
     "away_team_name": "لگانس",
-    "date_match": "1404/1/9",
-    "time_match": "23:30",
+    "homegoal": "2",
+    "awaygoal": "1",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   },
@@ -30,8 +30,8 @@
     "away_team_icon": "https://crests.football-data.org//745.png",
     "home_team_name": "رئال مادرید",
     "away_team_name": "لگانس",
-    "date_match": "1404/1/9",
-    "time_match": "23:30",
+    "homegoal": "1",
+    "awaygoal": "6",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   },
@@ -42,8 +42,8 @@
     "away_team_icon": "https://crests.football-data.org//745.png",
     "home_team_name": "رئال مادرید",
     "away_team_name": "لگانس",
-    "date_match": "1404/1/9",
-    "time_match": "23:30",
+    "homegoal": "2",
+    "awaygoal": "2",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   }
