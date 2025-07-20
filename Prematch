@@ -1,14 +1,14 @@
 [
   {
-    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
-    "tournament_text": "Laliga",
+    "tournament_icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/FIFA_Club_World_Cup_logo.svg/400px-FIFA_Club_World_Cup_logo.svg.png",
+    "tournament_text": "Club World Cup",
     "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://crests.football-data.org//745.png",
+    "away_team_icon": "https://upload.wikimedia.org/wikipedia/fa/thumb/7/77/FC_Red_Bull_Salzburg_logo.svg/330px-FC_Red_Bull_Salzburg_logo.svg.png",
     "home_team_name": "رئال مادرید",
-    "away_team_name": "لگانس",
+    "away_team_name": "سالزبورگ",
     "homegoal": "3",
-    "awaygoal": "1",
-    "studiom": "سانتیاگو برنابئو",
+    "awaygoal": "0",
+    "studiom": "Lincoln Financial Field",
     "limit": "FALSE"
   },
   {
