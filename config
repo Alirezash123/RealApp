@@ -28,5 +28,10 @@
     "name": "کانفیگ( vless) 6",
     "date": "1404/4/31",
     "config": "vless://5139af95-a453-46c6-831a-a532b6b51305@DeEp-RAdIo.SEOtOoLSForYou.CO.UK:80?path=%2F&security=none&encryption=none&type=ws#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ(ss) 7",
+    "date": "1404/5/1",
+    "config": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M%3D@141.98.101.182:443#%40Shahrokh_config"
   }
 ]
