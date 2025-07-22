@@ -13,5 +13,10 @@
     "name": "کانفیگ(vless )3",
     "date": "1404/4/31",
     "config": "vless://1b9ad34d-6b57-4ad1-84f5-12698b9b2b29@104.16.85.3:80?path=%2F%40vmessorg----%40vmessorg-----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg%3Fed%3D2480&security=none&encryption=none&host=join-to-Vmessorg.sabadyt.ir&type=ws#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( ss) 4",
+    "date": "1404/4/31",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxc2NhdkY1VXZpSUwtOFYtRTRyYUJB@194.87.71.228:2222#%40Shahrokh_config"
   }
 ]
