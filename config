@@ -23,5 +23,10 @@
     "name": "کانفیگ( vless) 5",
     "date": "1404/4/31",
     "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.78:8880?mode=gun&security=none&encryption=none&type=grpc#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( vless) 6",
+    "date": "1404/4/31",
+    "config": "vless://5139af95-a453-46c6-831a-a532b6b51305@DeEp-RAdIo.SEOtOoLSForYou.CO.UK:80?path=%2F&security=none&encryption=none&type=ws#%40Shahrokh_config"
   }
 ]
