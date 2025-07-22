@@ -18,5 +18,10 @@
     "name": "کانفیگ( ss) 4",
     "date": "1404/4/31",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxc2NhdkY1VXZpSUwtOFYtRTRyYUJB@194.87.71.228:2222#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( vless) 5",
+    "date": "1404/4/31",
+    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@45.82.251.78:8880?mode=gun&security=none&encryption=none&type=grpc#%40Shahrokh_config"
   }
 ]
