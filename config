@@ -68,5 +68,10 @@
     "name": "کانفیگ( vless) 14",
     "date": "1404/5/3",
     "config": "vless://e9979910-79d1-4621-a93c-b2a579c44ba7@104.16.69.162:8880?path=%2FfgvtHUpS6R8Rv8s5%3Fed%3D2560&security=none&encryption=none&host=vngsupply.ip-ddns.com&type=ws#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( vless) 15",
+    "date": "1404/5/4",
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.183.30:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%40Shahrokh_config"
   }
 ]
