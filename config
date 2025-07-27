@@ -73,5 +73,10 @@
     "name": "کانفیگ( vless) 15",
     "date": "1404/5/4",
     "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.183.30:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( vless) 16",
+    "date": "1404/5/5",
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.181.47:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%40Shahrokh_config"
   }
 ]
