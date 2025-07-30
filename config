@@ -98,5 +98,10 @@
     "name": "کانفیگ( vless) 20",
     "date": "1404/5/8",
     "config": "vless://Parsashonam-Bot-8@185.146.173.39:8080?path=%2FParsashonam-Parsashonam-Parsashonam%2F%3Fed%3D2056&security=none&encryption=none&host=De.Parsashonam.CfD.&type=httpupgrade#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ(ss) 21",
+    "date": "1404/5/8",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@185.193.102.7:57456#%40Shahrokh_config"
   }
 ]
