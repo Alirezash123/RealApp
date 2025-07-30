@@ -103,5 +103,10 @@
     "name": "کانفیگ(ss) 21",
     "date": "1404/5/8",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@185.193.102.7:57456#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( vless) 22",
+    "date": "1404/5/8",
+    "config": "vless://e9979910-79d1-4621-a93c-b2a579c44ba7@104.17.1.197:8880?path=%2F1ycR2zb3KeELWRha%3Fed%3D2560&security=none&encryption=none&host=VngSuPpLY.IP-DdnS.com&type=ws#%40Shahrokh_config"
   }
 ]
