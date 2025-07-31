@@ -108,5 +108,10 @@
     "name": "کانفیگ( vless) 22",
     "date": "1404/5/8",
     "config": "vless://e9979910-79d1-4621-a93c-b2a579c44ba7@104.17.1.197:8880?path=%2F1ycR2zb3KeELWRha%3Fed%3D2560&security=none&encryption=none&host=VngSuPpLY.IP-DdnS.com&type=ws#%40Shahrokh_config"
+  },
+  {
+    "name": "کانفیگ( vless) 23🇩🇪",
+    "date": "1404/5/9",
+    "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.181.47:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%87%A9%F0%9F%87%AA"
   }
 ]
