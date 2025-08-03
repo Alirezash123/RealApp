@@ -118,5 +118,10 @@
     "name": "کانفیگ( vless) 24🇩🇪",
     "date": "1404/5/11",
     "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.183.30:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#%F0%9F%87%A9%F0%9F%87%AA"
+  },
+  {
+    "name": "کانفیگ( ss) 25🇳🇱",
+    "date": "1404/5/12",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.199:8080#%F0%9F%87%B3%F0%9F%87%B1"
   }
 ]
