@@ -128,5 +128,10 @@
     "name": "کانفیگ( vless) 26🇩🇪",
     "date": "1404/5/13",
     "config": "vless://bb7b030f-fd37-488a-be1f-1a26d874cb26@91.99.181.47:8443?mode=stream-one&path=%2Fxhttp&security=none&encryption=none&type=xhttp#germany"
+  },
+  {
+    "name": "کانفیگ( vless) 27🇩🇪",
+    "date": "1404/5/14",
+    "config": "vless://0505a73b-2643-4029-ae7a-9889c5ba1436@www.speedtest.net:80?path=%2FTelegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs%3Fed%3D80&security=none&encryption=none&host=www.speedtest.net.c.1.avaacado.ir&type=ws#german%F0%9F%87%A9%F0%9F%87%AA"
   }
 ]
