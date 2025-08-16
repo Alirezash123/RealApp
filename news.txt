@@ -75,12 +75,5 @@
     "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=800",
     "Content": "W29iamVjdCBIVE1MVGV4dEFyZWFFbGVtZW50XQ==",
     "Title": "18"
-  },
-  {
-    "Date-time": "A",
-    "Short-description": "Y",
-    "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=800",
-    "Content": "",
-    "Title": "B"
   }
 ]
