@@ -49,13 +49,6 @@
     "Title": "رئال مادرید یک بازی دوستانه در اتریش فیکس کرد"
   },
   {
-    "Date-time": "16",
-    "Short-description": "خلصه",
-    "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=800",
-    "Content": "2YXYrdiq2YjYpyDYp9mE2qnbjA==",
-    "Title": "پیروزی"
-  },
-  {
     "Date-time": "1404/5/25-15:30",
     "Short-description": "رودریگو گوئس، مهاجم رئال مادرید، در حالی فصل ۲۰۲۵/۲۶ لالیگا رو شروع می‌کنه که... ",
     "thumbnail": "https://s34.picofile.com/file/8486467984/real_madrid_cf_v_cd_leganes_la_liga_ea_sports_scaled_copy_300x214.jpg",
