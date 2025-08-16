@@ -54,5 +54,12 @@
     "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=800",
     "Content": "2YXYrdiq2YjYpyDYp9mE2qnbjA==",
     "Title": "پیروزی"
+  },
+  {
+    "Date-time": "1404/5/25-14:30",
+    "Short-description": "به ستاره رئال مادرید پیشنهاد داد ",
+    "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=300",
+    "Content": "",
+    "Title": "پیشنهاد فنر باغچه به  ستاره رئال "
   }
 ]
