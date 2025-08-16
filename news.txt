@@ -61,12 +61,5 @@
     "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=300",
     "Content": "",
     "Title": "پیشنهاد فنر باغچه به  ستاره رئال "
-  },
-  {
-    "Date-time": "16",
-    "Short-description": "18",
-    "thumbnail": "https://news-cdn.varzesh3.com/pictures/2024/04/01/C/x0gaen1t2.jpg?w=300",
-    "Content": "",
-    "Title": "17"
   }
 ]
