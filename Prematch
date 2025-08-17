@@ -1,18 +1,6 @@
 [
   {
     "tournament_icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/FIFA_Club_World_Cup_logo.svg/400px-FIFA_Club_World_Cup_logo.svg.png",
-    "tournament_text": "Club World Cup",
-    "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://upload.wikimedia.org/wikipedia/fa/thumb/7/77/FC_Red_Bull_Salzburg_logo.svg/330px-FC_Red_Bull_Salzburg_logo.svg.png",
-    "home_team_name": "رئال مادرید",
-    "away_team_name": "سالزبورگ",
-    "homegoal": "3",
-    "awaygoal": "0",
-    "studiom": "Lincoln Financial Field",
-    "limit": "FALSE"
-  },
-  {
-    "tournament_icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/FIFA_Club_World_Cup_logo.svg/400px-FIFA_Club_World_Cup_logo.svg.png",
     "tournament_text": "Club World Cup ",
     "home_team_icon": "https://crests.football-data.org//86.png",
     "away_team_icon": "https://crests.football-data.org//109.png",
@@ -45,6 +33,18 @@
     "homegoal": "0",
     "awaygoal": "4",
     "studiom": "متلایف",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://image-service.onefootball.com/transform?w=48&dpr=2&image=https://images.onefootball.com/icons/leagueColoredCompetition/64/140.png",
+    "tournament_text": "Club friendly games",
+    "home_team_icon": "https://image-service.onefootball.com/transform?w=128&dpr=2&image=https://images.onefootball.com/icons/teams/164/1173.png",
+    "away_team_icon": "https://crests.football-data.org//86.png",
+    "home_team_name": "تیرول",
+    "away_team_name": "رئال مادرید",
+    "homegoal": "0",
+    "awaygoal": "4",
+    "studiom": "Tivoli Stadion Tirol",
     "limit": "FALSE"
   }
 ]
