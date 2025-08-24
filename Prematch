@@ -3,18 +3,6 @@
     "tournament_icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/FIFA_Club_World_Cup_logo.svg/400px-FIFA_Club_World_Cup_logo.svg.png",
     "tournament_text": "Club World Cup ",
     "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://crests.football-data.org//109.png",
-    "home_team_name": "رئال مادرید",
-    "away_team_name": "یونتوس",
-    "homegoal": "1",
-    "awaygoal": "0",
-    "studiom": "سان لایف",
-    "limit": "FALSE"
-  },
-  {
-    "tournament_icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/FIFA_Club_World_Cup_logo.svg/400px-FIFA_Club_World_Cup_logo.svg.png",
-    "tournament_text": "Club World Cup ",
-    "home_team_icon": "https://crests.football-data.org//86.png",
     "away_team_icon": "https://crests.football-data.org//4.png",
     "home_team_name": "رئال مادرید",
     "away_team_name": "دورتموند",
@@ -45,6 +33,18 @@
     "homegoal": "0",
     "awaygoal": "4",
     "studiom": "Tivoli Stadion Tirol",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://crests.football-data.org/laliga.png",
+    "tournament_text": "Laliga",
+    "home_team_icon": "https://crests.football-data.org//86.png",
+    "away_team_icon": "https://crests.football-data.org/79.png",
+    "home_team_name": "رئال مادرید",
+    "away_team_name": "اوساسونا",
+    "homegoal": "1",
+    "awaygoal": "0",
+    "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   }
 ]
