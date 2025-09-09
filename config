@@ -148,5 +148,10 @@
     "name": "کانفیگ(ss)",
     "date": "1404/6/18",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@45.87.175.170:8080#%40v2_configs"
+  },
+  {
+    "name": "کانفیگ 31( vless) 🇳🇱",
+    "date": "1404/6/19",
+    "config": "vless://44cb3f8c-57a4-4f2b-a0ae-d9121e54a598@ir.fxgoldensignals.com:54567?path=%2F54567%2Fmvfkvk&security=none&encryption=none&type=ws#%40v2_configs"
   }
 ]
