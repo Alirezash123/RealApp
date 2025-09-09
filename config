@@ -153,5 +153,10 @@
     "name": "کانفیگ 31( vless) 🇳🇱",
     "date": "1404/6/19",
     "config": "vless://44cb3f8c-57a4-4f2b-a0ae-d9121e54a598@ir.fxgoldensignals.com:54567?path=%2F54567%2Fmvfkvk&security=none&encryption=none&type=ws#%40v2_configs"
+  },
+  {
+    "name": "کانفیگ( vmees) 32🇩🇪",
+    "date": "1404/6/19",
+    "config": "vmess://eyJhZGQiOiI5MS45OS4xNTcuMTkzIiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjA3ZDBlMDhiLTRiM2YtNDVlYS1iZmYwLWU4Y2NhOGZlZTI1NiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMjA1MiIsInBzIjoiVGVsZWdyYW0gOiBAdjJfY29uZmlncyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0="
   }
 ]
