@@ -163,5 +163,10 @@
     "name": "کانفیگ( vless) 33🇳🇱",
     "date": "1404/6/19",
     "config": "vless://5475990d-e0ce-46ea-95e5-50f9e4879af9@188.225.80.183:443?security=reality&encryption=none&pbk=J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ru.sfasti.ru&sid=16895459a2c7768d#%40V2_configs"
+  },
+  {
+    "name": "کانفیگ( vless) 34 🇲🇩",
+    "date": "1404/6/19",
+    "config": "vless://6035325d-399a-5148-9126-29cedfd5966a@45.84.0.234:443?security=reality&encryption=none&pbk=CxD6SIA4ybaD5tvo2QCNGGPBXK4CHwEjo6qI43XNaxc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=outlook.office.com&sid=f1662b05#%F0%9F%87%B2%F0%9F%87%A9%20%40v2_configs"
   }
 ]
