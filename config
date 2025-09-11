@@ -178,5 +178,10 @@
     "name": "کانفیگ vless (36)🇫🇮",
     "date": "1404/6/20",
     "config": "vless://12ddaff3-c701-4157-a7d2-0928c9ee1e2d@hoho.yakarimmilan.ir:16548?security=reality&encryption=none&pbk=D7bY9fWkLs_S2_TMQ1bBI-MIJzeJ3rV5RA1_pOl6HBo&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=preview.redd.it&sid=4660232e77cd95#%F0%9F%87%AB%F0%9F%87%AE%20%40V2_configs"
+  },
+  {
+    "name": "کانفیگ( vless) 37  🇦🇪",
+    "date": "1404/6/20",
+    "config": "vless://1b197700-e6fd-43ea-96ca-488f4c4cd731@93.127.180.128:123?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%87%A6%F0%9F%87%AA%20%40V2_configs"
   }
 ]
