@@ -173,5 +173,10 @@
     "name": "کانفیگ( vless) 35🇳🇱",
     "date": "1404/6/20",
     "config": "vless://6fae85ca-395a-4f27-9eb2-75123befc475@185.200.240.188:443?security=reality&encryption=none&pbk=J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ru.sfasti.ru&sid=16895459a2c7768d#%40V2_configs%F0%9F%87%B3%F0%9F%87%B1"
+  },
+  {
+    "name": "کانفیگ vless (36)🇫🇮",
+    "date": "1404/6/20",
+    "config": "vless://12ddaff3-c701-4157-a7d2-0928c9ee1e2d@hoho.yakarimmilan.ir:16548?security=reality&encryption=none&pbk=D7bY9fWkLs_S2_TMQ1bBI-MIJzeJ3rV5RA1_pOl6HBo&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=preview.redd.it&sid=4660232e77cd95#%F0%9F%87%AB%F0%9F%87%AE%20%40V2_configs"
   }
 ]
