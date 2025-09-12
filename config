@@ -183,5 +183,10 @@
     "name": "کانفیگ( vless) 37  🇦🇪",
     "date": "1404/6/20",
     "config": "vless://1b197700-e6fd-43ea-96ca-488f4c4cd731@93.127.180.128:123?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%87%A6%F0%9F%87%AA%20%40V2_configs"
+  },
+  {
+    "name": "کانفیگ( vless) 38🇺🇸",
+    "date": "1404/6/21",
+    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@185.236.232.148:8880?mode=gun&security=none&encryption=none&type=grpc#%F0%9F%87%BA%F0%9F%87%B8%40V2_configs"
   }
 ]
