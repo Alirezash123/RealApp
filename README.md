@@ -1,27 +1,64 @@
-[ERROR:flutter/runtime/dart_vm_initializer.cc(41)] Unhandled Exception: 'package:bloc/src/emitter.dart': Failed assertion: line 114 pos 7: '!_isCompleted': 
-E/flutter (31985): 
-E/flutter (31985): emit was called after an event handler completed normally.
-E/flutter (31985): This is usually due to an unawaited future in an event handler.
-E/flutter (31985): Please make sure to await all asynchronous operations with event handlers
-E/flutter (31985): and use emit.isDone after asynchronous operations before calling emit() to
-E/flutter (31985): ensure the event handler has not completed.
-E/flutter (31985): 
-E/flutter (31985):   **BAD**
-E/flutter (31985):   on<Event>((event, emit) {
-E/flutter (31985):     future.whenComplete(() => emit(...));
-E/flutter (31985):   });
-E/flutter (31985): 
-E/flutter (31985):   **GOOD**
-E/flutter (31985):   on<Event>((event, emit) async {
-E/flutter (31985):     await future.whenComplete(() => emit(...));
-E/flutter (31985):   });
-E/flutter (31985): 
-E/flutter (31985): #0      _AssertionError._doThrowNew (dart:core-patch/errors_patch.dart:51:61)
-E/flutter (31985): #1      _AssertionError._throwNew (dart:core-patch/errors_patch.dart:40:5)
-E/flutter (31985): #2      _Emitter.call (package:bloc/src/emitter.dart:114:7)
-E/flutter (31985): #3      DataBloc._fetchData.<anonymous closure> (package:real/bloc/data_block.dart:46:17)
-E/flutter (31985): #4      _Timer._runTimers (dart:isolate-patch/timer_impl.dart:398:19)
-E/flutter (31985): #5      _Timer._handleMessage (dart:isolate-patch/timer_impl.dart:429:5)
-E/flutter (31985): #6      _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:189:12)
-E/flutter (31985): 
+import 'dart:async';
+import 'dart:convert';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:http/http.dart' as http;
+import 'data_event.dart';
+import 'data_state.dart';
 
+class DataBloc extends Bloc <DataEvent,DataState>{
+  DataBloc():super(DataInitial()){
+    on<FetchDataEvent>(_fetchData);
+
+  }
+
+  FutureOr<void> _fetchData(FetchDataEvent event, Emitter<DataState> emit) async{
+    emit(DataLoading());
+    
+    try{
+      
+      var response =await http.get(Uri.parse("https://raw.githubusercontent.com/Alirezash123/RealApp/refs/heads/main/heder.txt"));
+      var newsrespons=await http.get(Uri.parse("https://raw.githubusercontent.com/Alirezash123/RealApp/refs/heads/main/news.txt"));
+      var tabledata=await http.get(Uri.parse("https://api.football-data.org/v4/competitions/PD/standings"),headers: {'X-Auth-Token':'9a90bafca7a84ab0afcdb13b014ac2fe'});
+      var nextmatch=await http.get(Uri.parse("https://raw.githubusercontent.com/Alirezash123/RealApp/refs/heads/main/nextmatch"));
+      var prematch=await http.get(Uri.parse("https://raw.githubusercontent.com/Alirezash123/RealApp/refs/heads/main/Prematch"));
+      if(response.statusCode==200){
+        var data =jsonDecode(response.body);
+        var news=jsonDecode(newsrespons.body);
+        var table=jsonDecode(tabledata.body);
+        var Next_match=jsonDecode(nextmatch.body);
+        var Pre_match=jsonDecode(prematch.body);
+        List newslentch=news;
+        var reverseNews=newslentch.reversed.toList();
+        List table1 =table['standings'][0]['table'];
+        print(table1);
+
+        emit(DataLoaded(data,news,newslentch.length,reverseNews,table1,Next_match,Pre_match,[]));
+        Timer _timer;
+
+        _timer=Timer.periodic(Duration(seconds: 10), (Timer timer)async {
+
+          var livematch=await http.get(Uri.parse("https://api.football-data.org/v4/teams/86/matches"),headers: {'X-Auth-Token':'9a90bafca7a84ab0afcdb13b014ac2fe'});
+          var live=jsonDecode(livematch.body);
+          var matches=live['matches'];
+          var inplaymatch=matches.firstWhere((record)=>record['status']=='FINISHED',orElse:()=>null);
+          if(inplaymatch!=null){
+            var inplaygoal=inplaymatch['score']['fullTime'];
+            emit(DataLoaded(data,news,newslentch.length,reverseNews,table1,Next_match,Pre_match,inplaygoal));
+          }
+
+        });
+
+
+      }else{
+        print('eror');
+        emit(DataEror(response.statusCode));
+      }
+      
+    }catch(e){
+      print(e.toString());
+      emit(DataEror(e.toString()));
+    }
+    
+    
+  }
+}
