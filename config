@@ -193,5 +193,10 @@
     "name": "کانفیگ(vless) 39🇫🇮",
     "date": "1404/6/21",
     "config": "vless://2de868a2-21e1-409c-b901-ac87779f57e4@m74a.vip784.com:33801?security=none&encryption=none&host=varzesh3.ir&headerType=http&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%40V2_configs"
+  },
+  {
+    "name": "کانفیگ( vless) 40 🇫🇷",
+    "date": "1404/6/22",
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@638929114454179379.warsaw-drc-tusabq.info:8880?mode=gun&security=none&encryption=none&type=grpc#%40V2_configs%F0%9F%87%AB%F0%9F%87%B7"
   }
 ]
