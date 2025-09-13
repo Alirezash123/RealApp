@@ -24,13 +24,13 @@
     "limit": "FALSE"
   },
   {
-    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
-    "tournament_text": "Laliga",
+    "tournament_icon": "https://crests.football-data.org/CL.png",
+    "tournament_text": "Champions League",
     "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://crests.football-data.org//92.png",
+    "away_team_icon": "https://crests.football-data.org//516.png",
     "home_team_name": "رئال مادرید",
-    "away_team_name": "رئال سوسیداد",
-    "date_match": "1404/6/23",
+    "away_team_name": "مارسی",
+    "date_match": "1404/6/25",
     "time_match": "22:30",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
@@ -39,11 +39,11 @@
     "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
     "tournament_text": "Laliga",
     "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://crests.football-data.org//89.png",
+    "away_team_icon": "https://crests.football-data.org//92.png",
     "home_team_name": "رئال مادرید",
-    "away_team_name": "مایورکا",
-    "date_match": "1404/6/8",
-    "time_match": "23:00",
+    "away_team_name": "رئال سوسیداد",
+    "date_match": "1404/6/23",
+    "time_match": "22:30",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   }
