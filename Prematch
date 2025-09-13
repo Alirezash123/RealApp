@@ -1,17 +1,5 @@
 [
   {
-    "tournament_icon": "https://image-service.onefootball.com/transform?w=48&dpr=2&image=https://images.onefootball.com/icons/leagueColoredCompetition/64/140.png",
-    "tournament_text": "Club friendly games",
-    "home_team_icon": "https://image-service.onefootball.com/transform?w=128&dpr=2&image=https://images.onefootball.com/icons/teams/164/1173.png",
-    "away_team_icon": "https://crests.football-data.org//86.png",
-    "home_team_name": "تیرول",
-    "away_team_name": "رئال مادرید",
-    "homegoal": "0",
-    "awaygoal": "4",
-    "studiom": "Tivoli Stadion Tirol",
-    "limit": "FALSE"
-  },
-  {
     "tournament_icon": "https://crests.football-data.org/laliga.png",
     "tournament_text": "Laliga",
     "home_team_icon": "https://crests.football-data.org//86.png",
@@ -45,6 +33,18 @@
     "homegoal": "2",
     "awaygoal": "1",
     "studiom": "سانتیاگو برنابئو",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
+    "tournament_text": "Laliga",
+    "home_team_icon": "https://crests.football-data.org/92.png",
+    "away_team_icon": "https://crests.football-data.org//86.png",
+    "home_team_name": "رئال سوسیداد",
+    "away_team_name": "رئال مادرید",
+    "homegoal": "1",
+    "awaygoal": "2",
+    "studiom": "آنوئتا",
     "limit": "FALSE"
   }
 ]
