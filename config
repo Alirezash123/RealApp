@@ -223,5 +223,10 @@
     "name": "کانفیگ( vmees) 45🇭🇰",
     "date": "1404/6/23",
     "config": "vmess://eyJhZGQiOiI0Ny4yMzkuMjA0LjE5MyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI1NjYwOGQyYy1iN2I0LTRjZGUtYTYzYi0zM2Q2ZTBiNmZkNjIiLCJuZXQiOiJ3cyIsInBhdGgiOiIvYXJraT9lZFx1MDAzZDIwNDgiLCJwb3J0IjoiMzM2MTEiLCJwcyI6IkBWMl9jb25maWdz8J+HrfCfh7AiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0="
+  },
+  {
+    "name": "کانفیگ(vless) 46🇩🇪",
+    "date": "1404/6/23",
+    "config": "vless://502ce704-dcec-4f92-9489-505c99ce6c89@172.66.40.99:2096?path=%2F&security=tls&encryption=none&host=d11.AlanHIAhO.cOM&type=ws&sni=d11.AlanHIAhO.cOM#%40V2_configs%20%F0%9F%87%A9%F0%9F%87%AA"
   }
 ]
