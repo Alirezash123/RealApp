@@ -228,5 +228,10 @@
     "name": "کانفیگ(vless) 46🇩🇪",
     "date": "1404/6/23",
     "config": "vless://502ce704-dcec-4f92-9489-505c99ce6c89@172.66.40.99:2096?path=%2F&security=tls&encryption=none&host=d11.AlanHIAhO.cOM&type=ws&sni=d11.AlanHIAhO.cOM#%40V2_configs%20%F0%9F%87%A9%F0%9F%87%AA"
+  },
+  {
+    "name": "کانفیگ( vless) 47🇺🇸",
+    "date": "1404/6/24",
+    "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@185.236.232.223:8880?mode=gun&security=none&encryption=none&fp=chrome&type=grpc#%40V2_configs%F0%9F%87%BA%F0%9F%87%B8"
   }
 ]
