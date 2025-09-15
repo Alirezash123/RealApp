@@ -243,5 +243,10 @@
     "name": "کانفیگ(vless) 49🇳🇱",
     "date": "1404/6/24",
     "config": "vless://6fae85ca-395a-4f27-9eb2-75123befc475@176.114.86.241:443?security=reality&encryption=none&pbk=J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ru.sfasti.ru&sid=16895459a2c7768d#%40V2_configs%20%F0%9F%87%B3%F0%9F%87%B1"
+  },
+  {
+    "name": "کانفیگ( ss) 50🇳🇱",
+    "date": "1404/6/24",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.188:8080#%40V2_configs%20%F0%9F%87%B3%F0%9F%87%B1"
   }
 ]
