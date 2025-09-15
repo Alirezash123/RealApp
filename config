@@ -233,5 +233,10 @@
     "name": "کانفیگ( vless) 47🇺🇸",
     "date": "1404/6/24",
     "config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@185.236.232.223:8880?mode=gun&security=none&encryption=none&fp=chrome&type=grpc#%40V2_configs%F0%9F%87%BA%F0%9F%87%B8"
+  },
+  {
+    "name": "کانفیگ(vless) 48🇫🇷",
+    "date": "1404/6/24",
+    "config": "vless://66185905-e3f9-4822-ba31-f46d3e6539f3@panelaf.dnsline.top:55522?security=none&encryption=none&headerType=http&type=tcp#%40V2_configs%20%F0%9F%87%AB%F0%9F%87%B7"
   }
 ]
