@@ -1,10 +1,5 @@
 [
   {
-    "name": "کانفیگ( وی لس) 2",
-    "date": "1404/4/31",
-    "config": "vless://cbfbc5e3-4b53-4854-931e-c9ac61719636@104.24.0.137:8080?path=%2Fkhkdjhsd%3Fed%3D2048&security=none&encryption=none&host=in2772.novintecc.ORG.&type=httpupgrade#%40Shahrokh_config"
-  },
-  {
     "name": "کانفیگ(vless )3",
     "date": "1404/4/31",
     "config": "vless://1b9ad34d-6b57-4ad1-84f5-12698b9b2b29@104.16.85.3:80?path=%2F%40vmessorg----%40vmessorg-----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg%3Fed%3D2480&security=none&encryption=none&host=join-to-Vmessorg.sabadyt.ir&type=ws#%40Shahrokh_config"
