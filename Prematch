@@ -6,8 +6,8 @@
     "away_team_icon": "https://crests.football-data.org//86.png",
     "home_team_name": "رئال اویدو",
     "away_team_name": "رئال مادرید",
-    "homegoal": "3",
-    "awaygoal": "0",
+    "homegoal": "0",
+    "awaygoal": "3",
     "studiom": "تارتیر",
     "limit": "FALSE"
   },
