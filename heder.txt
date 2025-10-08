@@ -2,13 +2,13 @@
   {
     "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
     "tournament_text": "Laliga",
-    "home_team_icon": "https://crests.football-data.org/86.png",
-    "away_team_icon": "https://crests.football-data.org/94.png",
-    "home_team_name": "رئال مادرید",
-    "away_team_name": "ویارئال",
-    "date_match": "1404/7/12",
+    "home_team_icon": "https://crests.football-data.org/82.png",
+    "away_team_icon": "https://crests.football-data.org/86.png",
+    "home_team_name": "ختافه",
+    "away_team_name": "رئال مادرید",
+    "date_match": "1404/7/27",
     "time_match": "22:30",
-    "studiom": "سانتیاگو برنابئو",
-    "limit": "true"
+    "studiom": "کلیسیوم آلفونسو پرز",
+    "limit": "false"
   }
 ]
