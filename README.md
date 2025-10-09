@@ -1,1 +1,10 @@
-vless://53fff6cc-b4ec-43e8-ade5-e0c42972fc33@193.151.135.21:44443?security=reality&encryption=none&pbk=XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.speedtest.net#TelegramID%20%E2%8C%B2Express_freevpn%20%E2%9B%AA%DA%A9%D8%A7%D8%B1%D8%AE%D9%88%D9%86%D9%87%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%20%D8%B3%D8%A7%D8%B2%DB%8C
+RewriteEngine On
+
+# هر درخواست برای register.php رو به myCloud/register.php بفرست
+RewriteRule ^register\.php$ myCloud/register.php [L]
+
+# هر درخواست برای home.php رو به myCloud/home.php بفرست
+RewriteRule ^home\.php$ myCloud/home.php [L]
+
+# درخواست خالی (root) رو به home.php بفرست
+RewriteRule ^$ myCloud/home.php [L]
