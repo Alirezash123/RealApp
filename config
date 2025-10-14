@@ -303,5 +303,10 @@
     "name": "کانفیگ( vless)",
     "date": "1404/7/17",
     "config": "vless://01996d6c-ca12-a514-1884-58805e80e2c9@104.26.12.31:443?path=%2Fsnippets%3Fip%3Dproxyip%3Aport%28443%29%26nat64%3D6to4&security=tls&encryption=none&host=000091gm0s8g08211s2q.rjp.3jrlr9edbfkg.s0add.dl24k.ghz.krcipuw0kx.vztx9qx.1luaw5rro.4sztyya.guarx48okfdavgn0i245is5g86r359.neib.cn&fp=chrome&type=ws&sni=000091gm0s8g08211s2q.rjp.3jrlr9edbfkg.s0add.dl24k.ghz.krcipuw0kx.vztx9qx.1luaw5rro.4sztyya.guarx48okfdavgn0i245is5g86r359.neib.cn#%D8%AA"
+  },
+  {
+    "name": "کانفیگ( vless) 🇫🇷",
+    "date": "1404/7/22",
+    "config": "vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.125:8880?mode=gun&security=none&encryption=none&type=grpc#%40V2_configs%40"
   }
 ]
