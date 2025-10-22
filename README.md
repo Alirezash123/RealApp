@@ -1,7 +1,24 @@
 import 'package:flutter/material.dart';
 
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: FormationScreen(),
+    );
+  }
+}
+
 class FormationScreen extends StatelessWidget {
-  final List<List<Map<String, String>>> formation = [
+  const FormationScreen({super.key});
+
+  // ترکیب رئال مادرید (بالا)
+  final List<List<Map<String, String>>> realMadridFormation = const [
     [
       {"name": "Joselu", "photo": "https://i.imgur.com/fake1.jpg"},
       {"name": "Vinícius", "photo": "https://i.imgur.com/fake2.jpg"},
@@ -23,6 +40,29 @@ class FormationScreen extends StatelessWidget {
     ],
   ];
 
+  // ترکیب تیم حریف (پایین)
+  final List<List<Map<String, String>>> opponentFormation = const [
+    [
+      {"name": "Player1", "photo": "https://i.imgur.com/fake12.jpg"},
+      {"name": "Player2", "photo": "https://i.imgur.com/fake13.jpg"},
+      {"name": "Player3", "photo": "https://i.imgur.com/fake14.jpg"},
+    ],
+    [
+      {"name": "Player4", "photo": "https://i.imgur.com/fake15.jpg"},
+      {"name": "Player5", "photo": "https://i.imgur.com/fake16.jpg"},
+      {"name": "Player6", "photo": "https://i.imgur.com/fake17.jpg"},
+    ],
+    [
+      {"name": "Player7", "photo": "https://i.imgur.com/fake18.jpg"},
+      {"name": "Player8", "photo": "https://i.imgur.com/fake19.jpg"},
+      {"name": "Player9", "photo": "https://i.imgur.com/fake20.jpg"},
+      {"name": "Player10", "photo": "https://i.imgur.com/fake21.jpg"},
+    ],
+    [
+      {"name": "Goalkeeper", "photo": "https://i.imgur.com/fake22.jpg"},
+    ],
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +72,7 @@ class FormationScreen extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         title: const Text(
-          "🔵 ترکیب رئال مادرید",
+          "ترکیب دو تیم",
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
         ),
@@ -59,14 +99,32 @@ class FormationScreen extends StatelessWidget {
               padding: const EdgeInsets.all(12.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: formation.map((line) {
-                  return Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: line.map((player) {
-                      return _buildPlayer(player['name']!, player['photo']!);
-                    }).toList(),
-                  );
-                }).toList(),
+                children: [
+                  // تیم رئال - بالا
+                  ...realMadridFormation.map((line) {
+                    return Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: line
+                          .map((player) =>
+                              _buildPlayer(player['name']!, player['photo']!, Colors.blue))
+                          .toList(),
+                    );
+                  }).toList(),
+
+                  // فاصله وسط زمین
+                  const SizedBox(height: 50),
+
+                  // تیم حریف - پایین
+                  ...opponentFormation.map((line) {
+                    return Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: line
+                          .map((player) =>
+                              _buildPlayer(player['name']!, player['photo']!, Colors.red))
+                          .toList(),
+                    );
+                  }).toList(),
+                ],
               ),
             ),
           ],
@@ -75,12 +133,14 @@ class FormationScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildPlayer(String name, String photoUrl) {
+  // ویجت بازیکن با حاشیه رنگ تیم
+  Widget _buildPlayer(String name, String photoUrl, Color color) {
     return Column(
       children: [
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
+            border: Border.all(color: color, width: 3),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.3),
@@ -93,7 +153,6 @@ class FormationScreen extends StatelessWidget {
             radius: 30,
             backgroundColor: Colors.white,
             backgroundImage: NetworkImage(photoUrl),
-            onBackgroundImageError: (_, __) {}, // جلوگیری از خطا در صورت نبود عکس
           ),
         ),
         const SizedBox(height: 6),
@@ -117,6 +176,7 @@ class FormationScreen extends StatelessWidget {
   }
 }
 
+// خطوط زمین فوتبال
 class FieldPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
