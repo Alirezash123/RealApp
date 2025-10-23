@@ -1,17 +1,5 @@
 [
   {
-    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
-    "tournament_text": "Laliga",
-    "home_team_icon": "https://crests.football-data.org/78.png",
-    "away_team_icon": "https://crests.football-data.org//86.png",
-    "home_team_name": "اتلتیکو مادرید",
-    "away_team_name": "رئال مادرید",
-    "homegoal": "5",
-    "awaygoal": "2",
-    "studiom": "متروپولیتانو",
-    "limit": "FALSE"
-  },
-  {
     "tournament_icon": "https://crests.football-data.org/CL.png",
     "tournament_text": "Champions league",
     "home_team_icon": "https://crests.football-data.org//10601.png",
@@ -45,6 +33,18 @@
     "homegoal": "0",
     "awaygoal": "1",
     "studiom": "کلیسیوم آلفونسو پرز",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://crests.football-data.org/CL.png",
+    "tournament_text": "Champions League",
+    "home_team_icon": "https://crests.football-data.org/86.png",
+    "away_team_icon": "https://crests.football-data.org//109.png",
+    "home_team_name": "رئال مادرید",
+    "away_team_name": "یوونتوس",
+    "homegoal": "1",
+    "awaygoal": "0",
+    "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
   }
 ]
