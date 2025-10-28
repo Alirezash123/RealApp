@@ -328,5 +328,10 @@
     "name": "Usa",
     "date": "1404/8/6",
     "config": "ss://YWVzLTI1Ni1nY206ZGFkYTA4MDE%3D@54.81.226.31:80#usa"
+  },
+  {
+    "name": "Cyprus",
+    "date": "1404/8/6",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@134.255.210.49:990#%F0%9F%87%A8%F0%9F%87%BECyprus"
   }
 ]
