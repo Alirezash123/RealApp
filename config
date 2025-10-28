@@ -343,5 +343,10 @@
     "name": "Singapore",
     "date": "1404/8/6",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprVG51WV9VMjF6VThGUGtDR1hkZDhB@68.183.236.145:1080#Singapore%F0%9F%87%B8%F0%9F%87%AC"
+  },
+  {
+    "name": "Latvia",
+    "date": "1404/8/6",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Latvia"
   }
 ]
