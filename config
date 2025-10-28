@@ -323,5 +323,10 @@
     "name": "کانفیگ(vless) 68🇫🇷",
     "date": "1404/7/25",
     "config": "vless://08cb0591-5193-4a0c-9105-ceb09fba67fe@159.246.55.205:2053?path=%2F&security=tls&encryption=none&host=iYjnx-71195.zephorium.uk&fp=chrome&type=ws&sni=iYjnx-71195.zephorium.uk#%40V2_configs%20%F0%9F%87%AB%F0%9F%87%B7"
+  },
+  {
+    "name": "Usa",
+    "date": "1404/8/6",
+    "config": "ss://YWVzLTI1Ni1nY206ZGFkYTA4MDE%3D@54.81.226.31:80#usa"
   }
 ]
