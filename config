@@ -348,5 +348,10 @@
     "name": "Latvia",
     "date": "1404/8/6",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Latvia"
+  },
+  {
+    "name": "Viet Nam",
+    "date": "1404/8/6",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOazlhc2dsRHpIemprdFZ6VGt2aGFB@arxfw2b78fi2q9hzylhn.freesocks.work:443#Viet%20Nam"
   }
 ]
