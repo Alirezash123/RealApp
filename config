@@ -333,5 +333,10 @@
     "name": "Cyprus",
     "date": "1404/8/6",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@134.255.210.49:990#%F0%9F%87%A8%F0%9F%87%BECyprus"
+  },
+  {
+    "name": "Bahrain",
+    "date": "1404/8/6",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Bahrain%F0%9F%87%A7%F0%9F%87%AD"
   }
 ]
