@@ -338,5 +338,10 @@
     "name": "Bahrain",
     "date": "1404/8/6",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Bahrain%F0%9F%87%A7%F0%9F%87%AD"
+  },
+  {
+    "name": "Singapore",
+    "date": "1404/8/6",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprVG51WV9VMjF6VThGUGtDR1hkZDhB@68.183.236.145:1080#Singapore%F0%9F%87%B8%F0%9F%87%AC"
   }
 ]
