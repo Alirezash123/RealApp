@@ -2,7 +2,7 @@
   {
     "tournament_icon": "https://crests.football-data.org/CL.png",
     "tournament_text": "Champions League",
-    "home_team_icon": "https://crests.football-data.org/94.png",
+    "home_team_icon": "https://crests.football-data.org/64.png",
     "away_team_icon": "https://crests.football-data.org/86.png",
     "home_team_name": "لیورپول",
     "away_team_name": "رئال مادرید",
