@@ -7,8 +7,8 @@
     "home_team_name": "رایو وایه کانه",
     "away_team_name": "رئال مادرید",
     "date_match": "1404/8/18",
-    "time_match": "23:30",
-    "studiom": "آنفیلد",
+    "time_match": "18:45",
+    "studiom": "استادیو وایکاس",
     "limit": "true"
   }
 ]
