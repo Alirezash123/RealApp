@@ -7,8 +7,8 @@
     "home_team_name": "الچه",
     "away_team_name": "رئال مادرید",
     "date_match": "1404/9/2",
-    "time_match": "18:30",
+    "time_match": "23:30",
     "studiom": "استادیو مانوئل مارتینز",
-    "limit": "false"
+    "limit": "true"
   }
 ]
