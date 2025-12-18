@@ -1,29 +1,5 @@
 [
   {
-    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
-    "tournament_text": "Laliga",
-    "home_team_icon": "https://crests.football-data.org//298.png",
-    "away_team_icon": "https://crests.football-data.org//86.png",
-    "home_team_name": "ژیرونا",
-    "away_team_name": "رئال مادرید",
-    "homegoal": "1",
-    "awaygoal": "1",
-    "studiom": "مونیسیپال دِ مونتی‌لیوی",
-    "limit": "FALSE"
-  },
-  {
-    "tournament_icon": "https://crests.football-data.org/laliga.png",
-    "tournament_text": "Laliga",
-    "home_team_icon": "https://crests.football-data.org/77.png",
-    "away_team_icon": "https://crests.football-data.org//86.png",
-    "home_team_name": "بیلبائو",
-    "away_team_name": "رئال مادرید",
-    "homegoal": "0",
-    "awaygoal": "3",
-    "studiom": "سن مامس",
-    "limit": "FALSE"
-  },
-  {
     "tournament_icon": "https://crests.football-data.org/laliga.png",
     "tournament_text": "Laliga",
     "home_team_icon": "https://crests.football-data.org//86.png",
@@ -45,6 +21,30 @@
     "homegoal": "1",
     "awaygoal": "2",
     "studiom": "سانتیاگو برنابئو",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
+    "tournament_text": "Laliga",
+    "home_team_icon": "https://crests.football-data.org//263.png",
+    "away_team_icon": "https://crests.football-data.org//86.png",
+    "home_team_name": "آلاوس",
+    "away_team_name": "رئال مادرید",
+    "homegoal": "1",
+    "awaygoal": "2",
+    "studiom": "مندیزوروتسا",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Copa_Del_Rey_Official_Logo.png?20250303155412",
+    "tournament_text": "Copa Del Rey",
+    "home_team_icon": "https://football360.ir/_next/image?url=https%3A%2F%2Fstatic.football360.ir%2Fnesta2%2Fmedia%2Fmissing_team_logo.png&w=96&q=75",
+    "away_team_icon": "https://crests.football-data.org//86.png",
+    "home_team_name": "تلاورا",
+    "away_team_name": "رئال مادرید",
+    "homegoal": "2",
+    "awaygoal": "3",
+    "studiom": "Estadio El Prado",
     "limit": "FALSE"
   }
 ]
