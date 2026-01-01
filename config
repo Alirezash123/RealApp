@@ -368,5 +368,10 @@
     "name": "کانفیگ( vless) 🇩🇪",
     "date": "1404/10/11",
     "config": "vless://turboo-server@turboo-server.sadafspace.com:80?path=%2Fed%3D2560&security=none&encryption=none&type=ws#%40V2_configs"
+  },
+  {
+    "name": "کانفیگ( vless) 🇩🇪",
+    "date": "1404/10/11",
+    "config": "vless://1a25f8ad-cad2-4e93-b5bf-34e42bcac02a@172.64.146.20:2096?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.cc.cd&fp=chrome&type=ws&sni=sni.111000.cc.cd#%40V2_configs"
   }
 ]
