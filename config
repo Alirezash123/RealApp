@@ -363,5 +363,10 @@
     "name": "تایوان",
     "date": "1404/8/7",
     "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.107.101:990#Taiwan%20%F0%9F%87%B9%F0%9F%87%BC"
+  },
+  {
+    "name": "کانفیگ( vless) 🇩🇪",
+    "date": "1404/10/11",
+    "config": "vless://turboo-server@turboo-server.sadafspace.com:80?path=%2Fed%3D2560&security=none&encryption=none&type=ws#%40V2_configs"
   }
 ]
