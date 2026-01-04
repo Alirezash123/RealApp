@@ -373,5 +373,10 @@
     "name": "کانفیگ( vless) 🇩🇪",
     "date": "1404/10/11",
     "config": "vless://1a25f8ad-cad2-4e93-b5bf-34e42bcac02a@172.64.146.20:2096?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2&security=tls&encryption=none&host=sni.111000.cc.cd&fp=chrome&type=ws&sni=sni.111000.cc.cd#%40V2_configs"
+  },
+  {
+    "name": "کانفیگ( vless) 🇷🇺",
+    "date": "1404/10/14",
+    "config": "vless://0df1e2bb-10d6-406a-aafb-910ebf5a85a3@a.ru.maviks.ru:443?security=reality&encryption=none&pbk=cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=maviks.ru&sid=0f917152a871e9c0#%F0%9F%87%B7%F0%9F%87%BA%20Russia"
   }
 ]
