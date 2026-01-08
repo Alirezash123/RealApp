@@ -6,9 +6,9 @@
     "away_team_icon": "https://crests.football-data.org/86.png",
     "home_team_name": "اتلتیکو مادرید",
     "away_team_name": "رئال مادرید",
-    "date_match": "04/10/18",
-    "time_match": "22:30",
-    "studiom": "متروپولیتانو",
+    "date_match": "0-0",
+    "time_match": "",
+    "studiom": "",
     "limit": "false"
   }
 ]
