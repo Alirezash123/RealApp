@@ -9,6 +9,6 @@
     "date_match": "11/4",
     "time_match": "23:30",
     "studiom": "لاسرامیکا",
-    "limit": "false"
+    "limit": "true"
   }
 ]
