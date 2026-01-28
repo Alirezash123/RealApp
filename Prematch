@@ -2,18 +2,6 @@
   {
     "tournament_icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Supercopa-de-Espa%C3%B1a-RFEF.svg/500px-Supercopa-de-Espa%C3%B1a-RFEF.svg.png",
     "tournament_text": "Super Cup",
-    "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://crests.football-data.org//78.png",
-    "home_team_name": "رئال مادرید",
-    "away_team_name": "اتلتیکو",
-    "homegoal": "2",
-    "awaygoal": "1",
-    "studiom": "Alinma Stadium",
-    "limit": "FALSE"
-  },
-  {
-    "tournament_icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Supercopa-de-Espa%C3%B1a-RFEF.svg/500px-Supercopa-de-Espa%C3%B1a-RFEF.svg.png",
-    "tournament_text": "Super Cup",
     "home_team_icon": "https://crests.football-data.org//81.png",
     "away_team_icon": "https://crests.football-data.org//86.png",
     "home_team_name": "بارسلونا",
@@ -45,6 +33,18 @@
     "homegoal": "6",
     "awaygoal": "1",
     "studiom": "سانتیاگو برنابئو",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://crests.football-data.org/laliga.png",
+    "tournament_text": "LaLiga",
+    "home_team_icon": "https://crests.football-data.org//94.png",
+    "away_team_icon": "https://crests.football-data.org//86.png",
+    "home_team_name": "ويارئال",
+    "away_team_name": "رئال مادرید",
+    "homegoal": "0",
+    "awaygoal": "2",
+    "studiom": "لاسرامیکا",
     "limit": "FALSE"
   }
 ]
