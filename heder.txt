@@ -9,6 +9,6 @@
     "date_match": "11/8",
     "time_match": "23:30",
     "studiom": "Lisboa e Benfica",
-    "limit": "false"
+    "limit": "true"
   }
 ]
