@@ -4,7 +4,7 @@
     "tournament_text": "Champions League",
     "home_team_icon": "https://crests.football-data.org/1903.png",
     "away_team_icon": "https://crests.football-data.org/86.png",
-    "home_team_name": "ویارئال",
+    "home_team_name": "بنفیکا",
     "away_team_name": "رئال مادرید",
     "date_match": "11/8",
     "time_match": "23:30",
