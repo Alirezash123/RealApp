@@ -6,7 +6,7 @@
     "away_team_icon": "https://crests.football-data.org//92.png",
     "home_team_name": "رئال مادرید",
     "away_team_name": "سوسیداد",
-    "date_match": "1404/11/26",
+    "date_match": "1404/11/25",
     "time_match": "23:30",
     "studiom": "سانتیاگو برنابئو",
     "limit": "FALSE"
