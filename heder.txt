@@ -1,7 +1,7 @@
 [
   {
-    "tournament_icon": "https://brandlogos.net/wp-content/uploads/2023/10/la_liga-logo_brandlogos.net_im3jl.png",
-    "tournament_text": "Laliga",
+    "tournament_icon": "https://crests.football-data.org/CL.png",
+    "tournament_text": "Champions League",
     "home_team_icon": "https://crests.football-data.org//1903.png",
     "away_team_icon": "https://crests.football-data.org//86.png",
     "home_team_name": "بنفیکا",
