@@ -2,18 +2,6 @@
   {
     "tournament_icon": "https://crests.football-data.org/laliga.png",
     "tournament_text": "Laliga",
-    "home_team_icon": "https://crests.football-data.org//86.png",
-    "away_team_icon": "https://crests.football-data.org/87.png",
-    "home_team_name": "رئال مادرید",
-    "away_team_name": "رایو وایه‌کانو",
-    "homegoal": "2",
-    "awaygoal": "1",
-    "studiom": "سانتیاگو برنابئو",
-    "limit": "FALSE"
-  },
-  {
-    "tournament_icon": "https://crests.football-data.org/laliga.png",
-    "tournament_text": "Laliga",
     "home_team_icon": "https://crests.football-data.org//95.png",
     "away_team_icon": "https://crests.football-data.org//86.png",
     "home_team_name": "والنسیا",
@@ -45,6 +33,18 @@
     "homegoal": "0",
     "awaygoal": "1",
     "studiom": "دالوز",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://crests.football-data.org/laliga.png",
+    "tournament_text": "Laliga",
+    "home_team_icon": "https://crests.football-data.org//79.png",
+    "away_team_icon": "https://crests.football-data.org/86.png",
+    "home_team_name": "اوساسونا",
+    "away_team_name": "رئال مادرید",
+    "homegoal": "2",
+    "awaygoal": "1",
+    "studiom": "آل سادار",
     "limit": "FALSE"
   }
 ]
