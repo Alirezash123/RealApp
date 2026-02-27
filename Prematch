@@ -1,18 +1,6 @@
 [
   {
     "tournament_icon": "https://crests.football-data.org/laliga.png",
-    "tournament_text": "Laliga",
-    "home_team_icon": "https://crests.football-data.org//95.png",
-    "away_team_icon": "https://crests.football-data.org//86.png",
-    "home_team_name": "والنسیا",
-    "away_team_name": "رئال مادرید",
-    "homegoal": "0",
-    "awaygoal": "2",
-    "studiom": "مستایا",
-    "limit": "FALSE"
-  },
-  {
-    "tournament_icon": "https://crests.football-data.org/laliga.png",
     "tournament_text": "LaLiga",
     "home_team_icon": "https://crests.football-data.org//86.png",
     "away_team_icon": "https://crests.football-data.org//92.png",
@@ -45,6 +33,18 @@
     "homegoal": "2",
     "awaygoal": "1",
     "studiom": "آل سادار",
+    "limit": "FALSE"
+  },
+  {
+    "tournament_icon": "https://crests.football-data.org/CL.png",
+    "tournament_text": "Champions League",
+    "home_team_icon": "https://crests.football-data.org//86.png",
+    "away_team_icon": "https://crests.football-data.org//1903.png",
+    "home_team_name": "رئال مادرید",
+    "away_team_name": "بنفیکا",
+    "homegoal": "2",
+    "awaygoal": "1",
+    "studiom": "برنابئو",
     "limit": "FALSE"
   }
 ]
